@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>註冊</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <reg>
+        <form>
+            <label_small>姓名</label_small><br>
+            <input type="text" name="NAME" id="NAME"><br>
+            <warn id="warning">*此為必填欄位</warn><br>
+            <label_small>出生年月日</label_small><br>
+            <input type="text" name="BIRTH" id="BIRTH" placeholder="xxxx/xx/xx"><br>
+            <warn id="warning">*此為必填欄位</warn><br>
+            <label_small>身分證字號</label_small><br>
+            <input type="text" name="IDENTIFICATION" id="IDENTIFICATION"><br>
+            <warn id="warning">*此為必填欄位</warn><br>
+            <label_small>性別</label_small><br>
+            <input type="text" name="GENDER" id="GENDER"><br>
+            <warn id="warning">*此為必填欄位</warn><br>
+            <label_small>帳號</label_small><br>
+            <input type="text" name="ACCOUNT" id="ACCOUNT"><br>
+            <warn id="warning">*此為必填欄位</warn><br>
+            <label_small>密碼</label_small><br>
+            <input type="password" name="PASSWORD" id="PASSWORD"><br>
+            <warn id="warning">*此為必填欄位</warn><br>
+            <parent>
+                <button id="register" class="btn waves-effect waves-light">註冊/修改 資訊</button>
+            </parent>
+        </form>
+    </reg>
+    <script type="module" src="./js/register.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+/*
+未標示直接以 TAG 定位元素 CSS
+#標示直接以 id 定位元素 CSS
+.標示直接以 class 定位元素 CSS
+*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main { /* index, login */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form { /* index, login, register */
+    width: 400px;
+    background-color: #ffffff;
+    border: solid 1px #EBEBEB;
+    padding: 5rem;
+}
+
+reg { /* register */
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow:scroll;
+}
+
+label_small {  /* index, login, register */
+    font-size: 29px;
+    white-space: nowrap; /* 不換行 */
+}
+
+label_small2 {  /* index, login, register */
+    font-size: 19px;
+    white-space: nowrap; /* 不換行 */
+}
+
+warn { /* index, login, register */
+    font-size: 10px;
+    color: red;
+}
+
+text {
+    font-size: 20px;
+}
+
+parent { /* register */
+    display: flex;
+    /* 水平置中 */
+    justify-content: center;
+    /* 垂直置中 */
+    align-content: center;
+    flex-wrap: wrap;
+    /*background-color: #f0f0f0;*/
+    height: 100%;
+}
+
+#continue { /* index */
+    margin-top: 2rem;
+    font-size: 29px;
+    float: right;
+    text-align: right;
+}
+
+#LOGIN { /* login */
+    margin-top: 2rem;
+    font-size: 29px;
+    width: 100%;
+}
+
+
+#register { /* register */
+    margin-top: 2rem;
+    font-size: 29px;
+    width: 800px;
+}
+
+
+/* home */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Fira+Sans+Extra+Condensed:ital,wght@1,700&family=Philosopher:wght@700&display=swap");
+body { /* ALL */
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Noto sans TC", sans-serif;
+    letter-spacing: 1px;
+    color: #333;
+    line-height: 1.4;
+}
+
+a { /* home */
+    text-decoration: none;
+    color: #000;
+}
+
+.wrapper-content { /* home */
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1023px) {
+    .wrapper-content {
+        max-width: auto;
+    }
+}
+
+header { /* home */
+    background-color: #fff5da;
+}
+
+.header-content { /* home */
+    width: 100%;
+    background-color: #fff5da;
+    height: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.body-content { /* home */
+    width: 100%;
+    /* 水平置中 */
+    justify-content: center;
+    /* 垂直置中 */
+    align-content: center;
+    height: calc(100vh - 70px);
+    display: flex;
+}
+
+.logo { /* home */
+    margin-right: auto;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    color: #000;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.header-nav { /* home */
+    width: 510px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-text { /* home */
+    letter-spacing: 3px;
+}
+
+.link-text:hover { /* home鼠標放上去的顏色 */
+    transition: all 0.2s;
+    color: #ffb500;
+}
+
+contentbody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content2 { /* home底下的其他 */
+    width: 100%;
+    background-color: #ee6e73;
+    height: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.header-nav2 { /* home底下的其他 */
+    width: 510px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+.link-text2 { /* home底下的其他 */
+    letter-spacing: 3px;
+}
+
